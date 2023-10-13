@@ -170,11 +170,20 @@ RefEx.class, User.class 확인
 -. Set : 중복O, 순서유지미보장(index 안따짐)
 -. Map : (key:value)
 
+
 -. ArrayList : 배열과 유사하여 방을추가하고 옮기고 값을 추가하므로 느리지만 순회는 빠름
 -. LinkedList : 앞 뒤 주소 참조함으로 값 추가 시 방추가와 주소만 바꾸면 되서 빠르고 유연성을 가짐
 
 
+Day17
+-. Iterator : 커서개념이 존재 (잘 사용 X)    // hasNext()
+-. Enumeration : 커서개념이 존재 (잘 사용 X) // hasMoreElement()
 
+-. 제네릭
+- List<Object> b = new List<Integer<(); 불가능함
+- Object > Integer지만 제네릭은 안됨!
+-  //static int add(List<? super Number> list) {   ==> super : List는 Number의 부모클래스만 받겠다	
+     static int add(List<? extends Number> list) {	// ==> extends : List는 Number의 자식 클래스만 받겠다
 
 
 
